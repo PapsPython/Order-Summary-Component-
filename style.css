@@ -1,0 +1,85 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  background-image:url("images/pattern-background-desktop.svg");
+  background-position:top;
+  background-repeat:repeat;
+  background-size: auto;
+}
+
+
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+.maincontainer{
+  width: 375px;
+  height: auto;
+  border: 1px solid gray;
+  border-radius:10px;
+  margin:0 auto;
+  overflow: hidden;
+  background-color: white;
+}
+
+.detailscontainer{
+  text-align: center;
+  padding: 20px;
+  
+  }
+
+header img{
+  margin: 0;
+  width: 100%;
+}
+
+p:nth-of-type(1){
+  font-weight: 900;
+}
+
+
+.selected-plan{
+background-color:hsl(225, 100%, 99%);
+display: flex;
+flex-direction: row;
+align-items: center;  
+padding:0px 20px;  
+gap:10px;
+margin-bottom: 10px;
+border-radius: 5px;
+}
+
+.selected-plan a{
+  margin-left: auto;
+  font-size:13px;
+}
+
+.paymentbtn,.cancelbtn{
+  display: block;
+  padding: 10px 60px;
+  margin: 20px auto;
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+}
+
+.paymentbtn{
+  box-shadow: 0 10px 10px 8px hsl(225, 100%, 94%);
+  background-color: hsl(245, 75%, 52%);
+}
+
+.cancelbtn{
+  background-color: transparent;
+  color: black;
+}
+
+
+@media screen and (width <= 375px){
+  body{
+    background-image: url("images/pattern-background-mobile.svg");
+    background-position: center;
+  }
+}
