@@ -1,18 +1,22 @@
-html, body {
+ 
+
+body {
   height: 100%;
   width: 100%;
   font-family: 'Red Hat Display', sans-serif;
   font-size: 16px;
   background-image:url("images/pattern-background-desktop.svg");
-  background-position:top;
-  background-repeat:repeat;
-  background-size: auto;
-}
+  background-repeat:no-repeat;
+  }
 
 
 
 *,*::before,*::after{
   box-sizing: border-box;
+}
+
+button{
+  font-style: inherit;
 }
 
 .maincontainer{
@@ -66,7 +70,7 @@ border-radius: 5px;
 }
 
 .paymentbtn{
-  box-shadow: 0 10px 10px 8px hsl(225, 100%, 94%);
+  box-shadow: 0 10px 10px 8px hsl(225, 100%, 96%);
   background-color: hsl(245, 75%, 52%);
 }
 
